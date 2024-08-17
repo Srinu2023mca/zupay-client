@@ -6,12 +6,12 @@ import { useNavigate } from 'react-router-dom';
 const CreatePost = () => {
     const [title, setTitle] = useState('');
     const [content, setContent] = useState('');
-    const history = useNavigate();
+    const navigate = useNavigate();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         await createPost({ title, content });
-        history.push('/');
+        navigate('/');
     };
 
     return (
