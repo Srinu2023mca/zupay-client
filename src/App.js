@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import ListView from './pages/ListView';
 import DetailView from './pages/DetailView';
 import CreatePost from './pages/CreatePost';
-
+import UpdatePost from './pages/UpdatePost';
 
 function App() {
     return (
@@ -16,6 +16,7 @@ function App() {
                     <Route exact path="/" element={<ListView/>} />
                     <Route path="/posts/:id" element={<DetailView/>} />
                     <Route path="/create" element={<CreatePost/>} />
+                    <Route path="/posts/:id/edit" element={<UpdatePost />} />
                 </Routes>
             </div>
             <Footer />

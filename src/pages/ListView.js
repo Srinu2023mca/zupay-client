@@ -13,16 +13,14 @@ const ListView = () => {
     
 
     return (
-        <div className="container">
+        <div className="container p-3 border rounded bg-light shadow">
             <h1>Blog Posts</h1>
-            <ul className="post-list ">
+            <div className="post-list">
                 {posts.map(post => (
-                    <li key={post._id} className='d-flex justify-content-between align-items-center'>
-                        <Link className='text-decoration-none w-75' to={`/posts/${post._id}`}>{post.title}</Link>
-                    </li>
+                    <Link key={post._id} className='text-decoration-none fs-4 form-control mb-2 text-primary ' to={`/posts/${post._id}`}>{post.title}</Link>
                 ))}
                 
-            </ul>
+            </div>
         </div>
     );
 };
