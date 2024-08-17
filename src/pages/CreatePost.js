@@ -15,8 +15,8 @@ const CreatePost = () => {
     };
 
     return (
-        <div className="container ">
-            <form onSubmit={handleSubmit} className='shadow'>
+        <div className="container d-flex align-items-center justify-content-center">
+            <form onSubmit={handleSubmit} className='w-75 shadow'>
                 <h1>Create New Post</h1>
                 <input
                     type="text"

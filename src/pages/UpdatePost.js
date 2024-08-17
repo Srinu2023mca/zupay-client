@@ -27,9 +27,9 @@ const UpdatePost = () => {
     };
 
     return (
-        <div className="container">
+        <div className="container w-75 d-flex align-items-center justify-content-center">
             
-            <form onSubmit={handleSubmit} className='shadow'>
+            <form onSubmit={handleSubmit} className='shadow w-100'>
                 <h3 className='mb-3'>Update Post</h3>
                 <input
                     type="text"
